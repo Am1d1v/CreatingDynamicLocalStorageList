@@ -18,6 +18,7 @@ async function usersData(){
             localStorage.setItem(`User ${index}`, JSON.stringify(element))
         }
 
+        // Create DOM elements
         const usersContainer =  document.createElement('div');
         usersContainer.classList.add('usersList')
         usersContainer.innerHTML = `${element.name} ${element.surname}`;
@@ -28,8 +29,24 @@ async function usersData(){
         }else {
             usersContainer.classList.add('status-false')
         }
+
+        // Change users status
+        usersContainer.addEventListener('click', (event) => {
+            console.log(event.target.classList[1]);
+            if(event.target.classList[1] === 'status-true'){
+                usersContainer.classList.remove('status-true')
+                usersContainer.classList.add('status-false')
+            } else {
+                usersContainer.classList.remove('status-false')
+                usersContainer.classList.add('status-true')
+            }
+        })
+
     })
 }
+
 usersData();
+
+
 
 
