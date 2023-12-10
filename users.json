@@ -1,0 +1,27 @@
+[
+    {
+        "name": "User1",
+        "surname": "Surname1",
+        "status": true
+    },
+    {
+        "name": "User2",
+        "surname": "Surname2",
+        "status": false
+    },
+    {
+        "name": "User3",
+        "surname": "Surname3",
+        "status": true
+    },
+    {
+        "name": "User4",
+        "surname": "Surname4",
+        "status": false
+    },
+    {
+        "name": "User5",
+        "surname": "Surname5",
+        "status": true
+    }
+]
